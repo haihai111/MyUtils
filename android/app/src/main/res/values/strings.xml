@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">SendoReact</string>
+    <string name="app_name">ReactExample</string>
+    <string name="action_settings">Settings</string>
 </resources>
