@@ -12,4 +12,8 @@ public class Math {
     public static int Minus(int a, int b) {
         return a - b;
     }
+
+    public static float Div(int a, int b) {
+        return a / b;
+    }
 }
