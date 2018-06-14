@@ -5,8 +5,15 @@
  */
 
 import React, { Component } from "react";
-import { Platform, StyleSheet, Text, View,Button,NativeModules } from "react-native";
-import PropTypes from 'prop-types';
+import {
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  NativeModules
+} from "react-native";
+import PropTypes from "prop-types";
 
 var ToastAndroid = NativeModules.ToastAndroid;
 const instructions = Platform.select({
@@ -17,13 +24,13 @@ const instructions = Platform.select({
 });
 
 const onButtonPress = () => {
-  ToastAndroid.show('Awesome', ToastAndroid.LONG);
+  ToastAndroid.show("Awesome", ToastAndroid.LONG);
   console.log("test");
- };
+};
 
 export default class App extends Component {
   static propTypes = {
-    button: PropTypes.string,
+    button: PropTypes.string
   };
 
   render() {

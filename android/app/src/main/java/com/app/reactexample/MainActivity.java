@@ -40,8 +40,14 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MyReactActivity.class);
-                startActivity(intent);
+//                Intent intent = new Intent(getApplicationContext(), MyReactActivity.class);
+//                startActivity(intent);
+                try {
+                    Intent intent = new Intent(getApplicationContext(),Class.forName("com.app.myutils.MyReactActivity"));
+                    startActivity(intent);
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
             }
         });
     }
