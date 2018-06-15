@@ -1,2 +1,2 @@
-include ':app', ':myutils'
+include ':app', ':myutils','react-native-master'
 rootProject.name = 'SendoReact'
