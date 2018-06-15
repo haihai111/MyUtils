@@ -1,2 +1,2 @@
 include ':app', ':myutils'
-rootProject.name = 'SendoReact1'
+rootProject.name = 'SendoReact'
